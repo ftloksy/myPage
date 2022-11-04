@@ -1,4 +1,10 @@
 let md = window.markdownit();
+let biotext 
+
+$.get("me/test.md", function ( data ){
+    console.log(data);
+    biotext = md.render(data);
+});
 
 
 $(document).ready(function() {
@@ -8,6 +14,8 @@ $(document).ready(function() {
 
     $("bio").load("includeHtml/bio.html", function() {
 //        $("img#biolab").attr("right", "0px");
+
+        $("div#biolab").html(biotext);
     });
 	// load the header. in header, there is my logo, webpage name
 	// and a dropdown menu. because header and photo is in different <div>
@@ -25,19 +33,19 @@ $(document).ready(function() {
 
     $("nav").load("includeHtml/nav.html", function() {
         $("svg#bio").on("click", function() {
-            console.log($("img#bio").attr("src"));
-            console.log($("img#biolab").attr("src"));
+            console.log($("svg#bio").attr("id"));
+            console.log($("div#biolab").attr("id"));
             $("img#biolabtwo").animate({
                 right: "1000px",
             }).css("display", "none");
 
-            $("img#biolab").css("display", "block").animate({
+            $("div#biolab").css("display", "block").animate({
                 right: "0px",
             })
         });
 
         $("svg#biotwo").on("click", function() {
-            $("img#biolab").animate({
+            $("div#biolab").animate({
                 right: "1000px",
             }).css("display", "none");
 
@@ -47,10 +55,10 @@ $(document).ready(function() {
         })
     });
 
-    $.get("me/test.md", function ( data ){
+/*     $.get("me/test.md", function ( data ){
         console.log(data);
-        $("markdowntest").html(md.render(data));
-    });
+        $("div#biolab").html(md.render(data));
+    }); */
 
     $("footer").load("includeHtml/footer.html");
     

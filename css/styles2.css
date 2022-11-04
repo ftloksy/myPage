@@ -270,5 +270,11 @@ bio {
 bio > img {
   display: none;
   position: absolute;
+  right: 70%;
+}
+bio > div {
+  display: none;
+  position: absolute;
   right: 1000px;
+  width: 600px;
 }

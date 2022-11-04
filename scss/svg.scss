@@ -1,0 +1,15 @@
+//define the like svg icon.
+
+svg#like {
+    /* color: yellow; */
+    height: 30px;
+    width: 45px;
+    /* background-color: black; */
+    /* fill: yellow; */
+
+	> g > polygon {
+    	fill: yellow;
+    	stroke: red;
+    	stroke-width: 100;
+		}
+}

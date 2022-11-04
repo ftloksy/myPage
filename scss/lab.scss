@@ -1,0 +1,13 @@
+// Define the grallary display.
+
+row {
+	@extend .flex-row-start;
+}
+
+div#photolist {
+	display: block;
+}
+
+div#saveforlater {
+	display: none;
+}

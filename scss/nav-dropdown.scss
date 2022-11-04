@@ -1,0 +1,62 @@
+// define nav ( button ) and dropdown menu style.
+
+nav {
+    color: $icon-text;
+    display: inline;
+    padding: 10px;
+    @extend .icon-font;
+    cursor: pointer;
+}
+
+nav:hover {
+	color: $icon-background;
+}
+
+navbar {
+    @extend .flex-row-right;
+    position: relative;
+    min-width: 100%;
+    right: 20px;
+    bottom: -60px;
+    text-align: right;
+}
+
+
+nav.dropdown {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;  
+    @extend .nav-title;
+    cursor: pointer;
+    width: 200px;
+
+    > span {
+    	color: $icon-text;
+    }
+
+    > span:hover {
+	color: $icon-background;
+    }
+
+    > div.dropdown-content {
+    	display: none;
+    	position: absolute;
+    	min-width: 160px;
+    	z-index: 1;
+    	padding-top: 100px;
+    }
+
+	> a {
+		display: block;
+		color: $icon-hover;
+	}
+
+	> a:hover {
+		color: $icon-background;
+	}
+}
+
+nav.dropdown:hover {
+	color: $icon-background;
+}

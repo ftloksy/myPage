@@ -1,0 +1,270 @@
+.normal-message-block {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: auto;
+}
+
+.white-center {
+  text-align: center;
+  color: #fff;
+}
+
+.white-left, pagebody {
+  text-align: left;
+  color: #fff;
+}
+
+.our-story-card, pagebody {
+  background: transparent;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+body, html {
+  direction: ltr;
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+}
+
+@font-face {
+  font-family: FuzzyBubblesFontsBold;
+  src: url(../fonts/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+  font-family: FuzzyBubblesFontsRegular;
+  src: url(../fonts/FuzzyBubbles-Regular.ttf);
+}
+
+@font-face {
+  font-family: AntonRegular;
+  src: url(../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: DancingScriptBold;
+  src: url(../fonts/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+  font-family: DancingScriptMedium;
+  src: url(../fonts/static/DancingScript-Medium.ttf);
+}
+
+@font-face {
+  font-family: DancingScriptRegular;
+  src: url(../fonts/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: DancingScriptSemiBold;
+  src: url(../fonts/static/DancingScript-SemiBold.ttf);
+}
+
+.bold-font {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.bold-med-font, .icon-font, pagebody h2 {
+  font-size: 1.325rem;
+  font-weight: 400;
+}
+
+.big-title, .logo-font, mylogo > sublogo, pagebody h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-family: DancingScriptSemiBold;
+}
+
+.nav-title {
+  font-size: 2.425rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-family: DancingScriptSemiBold;
+}
+
+.small-title, copyright {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.faq-font {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.logo-font, mylogo > sublogo {
+  font-family: AntonRegular;
+}
+
+.icon-font {
+  font-family: DancingScriptSemiBold;
+}
+
+.flex-row, .flex-row-start, .flex-row-between, .flex-row-right,
+.flex-row-center-between, .flex-start-end, row, pagebody, pagebody tag,
+bio {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-start, .flex-start-end, row, pagebody, bio {
+  align-items: flex-start;
+}
+
+.flex-row-between, .flex-row-center-between, pagebody tag {
+  justify-content: space-between;
+}
+
+.flex-row-right {
+  justify-content: flex-end;
+}
+
+.flex-row-center-between {
+  justify-content: space-between;
+}
+
+.flex-footer-list-rows {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-start-end, pagebody, bio {
+  justify-content: flex-end;
+}
+
+mylogo > logo {
+  padding-top: 0.5rem;
+  padding-left: 2.5rem;
+}
+mylogo > logo > svg {
+  height: 100px;
+  width: 200px;
+}
+mylogo > logo > svg > g {
+  fill: #e50914;
+}
+mylogo > sublogo {
+  position: relative;
+  top: -15px;
+  left: 10px;
+  color: #e50914;
+}
+
+div#photolist {
+  display: block;
+}
+
+div#saveforlater {
+  display: none;
+}
+
+svg#like {
+  height: 30px;
+  width: 45px;
+}
+svg#like > g > polygon {
+  fill: yellow;
+  stroke: red;
+  stroke-width: 100;
+}
+
+footer {
+  display: block;
+  background: url(../images/layouts/footer.jpg);
+  height: 250px;
+}
+
+copyright {
+  text-align: center;
+  display: block;
+  color: #fff;
+  width: fit-content;
+  background: black;
+  border: 5px solid #586673;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+follow-me {
+  text-align: right;
+  display: block;
+  position: relative;
+  bottom: -150px;
+}
+follow-me > h2 {
+  color: #8b8b93;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+
+like {
+  display: inline;
+}
+
+header {
+  display: block;
+  background: url(../images/layouts/header.jpg);
+  height: 250px;
+}
+
+pagebody {
+  background-color: black;
+  z-index: 2;
+  position: relative;
+}
+pagebody img {
+  padding-right: 40px;
+}
+pagebody textarea {
+  display: block;
+}
+pagebody > page {
+  display: block;
+  height: 1200px;
+  padding-top: 20px;
+}
+pagebody > nav {
+  width: 100px;
+  min-height: 900px;
+  background: #e50914;
+}
+pagebody > nav > img {
+  display: block;
+  z-index: 5;
+  width: 30px;
+  height: 150px;
+  padding-bottom: 30px;
+}
+
+bio {
+  position: relative;
+}
+bio > img {
+  display: none;
+  position: absolute;
+  right: 1000px;
+}

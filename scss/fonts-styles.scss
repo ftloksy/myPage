@@ -1,0 +1,90 @@
+// define fonts.
+
+
+@font-face {
+    font-family: FuzzyBubblesFontsBold;
+    src: url(../fonts/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+    font-family: FuzzyBubblesFontsRegular;
+    src: url(../fonts/FuzzyBubbles-Regular.ttf);
+}
+
+@font-face {
+    font-family: AntonRegular;
+    src: url(../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: DancingScriptBold;
+    src: url(../fonts/static/DancingScript-Bold.ttf);
+}
+
+@font-face {
+    font-family: DancingScriptMedium;
+    src: url(../fonts/static/DancingScript-Medium.ttf);
+}
+
+@font-face {
+    font-family: DancingScriptRegular;
+    src: url(../fonts/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: DancingScriptSemiBold;
+    src: url(../fonts/static/DancingScript-SemiBold.ttf);
+}
+
+.bold-font {
+        font-size:1.625rem;
+        font-weight:400;
+}
+
+.bold-med-font {
+        font-size:1.325rem;
+        font-weight:400;
+}
+
+.big-title {
+        font-size:3.125rem;
+        line-height:1.1;
+        margin-bottom:.5rem;
+//	font-family: "Lucida Console", "Courier New", monospace;
+//	font-family: FuzzyBubblesFontsBold;
+	font-family: DancingScriptSemiBold; 
+}	
+
+.nav-title {
+        font-size:2.425rem;
+        line-height:1.1;
+        margin-bottom:.5rem;
+	font-family: DancingScriptSemiBold; 
+}
+
+
+.small-title {
+        font-weight:400;
+        font-size:1rem;
+        margin:0 auto;
+}
+
+
+.faq-font {
+        display:block;
+        text-align:left;
+        font-size: 20px;
+        padding: 20px;
+
+}
+
+.logo-font {
+	@extend .big-title;
+	font-family: AntonRegular; 
+}
+
+.icon-font {
+	@extend .bold-med-font;
+    	font-family: DancingScriptSemiBold;
+//	font-family: FuzzyBubblesFontsBold;
+}

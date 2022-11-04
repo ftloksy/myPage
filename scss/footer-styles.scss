@@ -1,0 +1,40 @@
+// Define footer css.
+
+footer {
+	display: block;
+//	min-width: 800px;
+	background: $footerbackgroundimg;
+	height: 250px;
+}
+
+copyright {
+    text-align: center;
+    display: block;
+//    position: relative;
+//    bottom: 225px;
+//    right: -100px;
+    color: $white;
+    @extend .small-title;
+    width: fit-content;
+//    padding: 5px;
+//    background: $copyright-background;
+	background: black;
+	        border: 5px solid $copyright-background;
+        border-radius: 15px;
+	padding: 5px;
+
+
+}
+
+follow-me {
+    text-align: right;
+    display: block;
+    position: relative;
+    bottom: -150px;
+
+	> h2 {
+		color: $copyright-text;
+		padding-right: 20px;
+		padding-bottom: 0px;
+	}
+}

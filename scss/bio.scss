@@ -1,0 +1,11 @@
+
+bio {
+    position: relative;
+    @extend .flex-start-end;
+
+    > img {
+	display: none;
+        position: absolute;
+        right: 1000px;
+    }
+}

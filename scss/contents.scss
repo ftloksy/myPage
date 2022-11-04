@@ -1,0 +1,41 @@
+// Define the display block.
+// photo, contact ...
+
+@mixin content {
+	background-color: black;
+	@extend .flex-start-end;
+//    display: flex;
+//    flex-direction: $direction;
+//    align-items: center;
+
+	@extend .white-left;
+	@extend .our-story-card;
+
+	img {
+		padding-right: 40px;
+	}
+	
+	textarea {
+		display: block;
+	}
+
+	h1 {
+		@extend .big-title;
+	}
+
+	h2 {
+		@extend .bold-med-font;
+	}
+
+	tag {
+		@extend .flex-row-between;
+	}
+
+}
+
+/* pagebody {
+		@include content(row);
+		z-index: 2;
+		position: relative;
+		right: 100px;
+} */

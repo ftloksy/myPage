@@ -1,0 +1,36 @@
+
+
+pagebody {
+	@include content;
+	z-index: 2;
+	position: relative;
+//	right: 100px;
+//	right: 50px;
+
+	> page {
+		display: block;
+		//	min-width: 800px;
+			// background: $coverpagebackgroundimg;
+			// background: $copyright-background;
+		height: 1200px;
+		padding-top: 20px;
+		// text-align: right;
+	}
+
+	> nav {
+		width: 100px;
+		min-height: 900px;
+		background: $main-red;
+
+		> img {
+			display: block;
+			z-index: 5;
+			width: 30px;
+			height: 150px;
+//			left: 50px;
+			padding-bottom:  30px;
+		}
+	}
+
+}
+

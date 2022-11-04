@@ -1,0 +1,39 @@
+// Webpage's Base css.
+
+//Normal-message-block
+.normal-message-block {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: auto;
+//      padding: $normal-padding;
+}
+
+
+.white-center {
+	text-align: center;
+	color: $white;
+}
+
+.white-left {
+	text-align: left;
+	color: $white;
+}
+
+.our-story-card {
+       background:transparent;
+        border-bottom:8px solid #222;
+        color:#fff;
+        margin-bottom:0;
+        padding:50px 5%;
+        position:relative;
+}
+
+
+body, html {
+        direction: ltr;
+        font-size: 16px;
+        color: $white;
+	background: #000;
+}
+

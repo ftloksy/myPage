@@ -24,7 +24,7 @@ $(document).ready(function() {
 	});
 
     $("nav").load("includeHtml/nav.html", function() {
-        $("img#bio").on("click", function() {
+        $("svg#bio").on("click", function() {
             console.log($("img#bio").attr("src"));
             console.log($("img#biolab").attr("src"));
             $("img#biolabtwo").animate({
@@ -36,7 +36,7 @@ $(document).ready(function() {
             })
         });
 
-        $("img#biotwo").on("click", function() {
+        $("svg#biotwo").on("click", function() {
             $("img#biolab").animate({
                 right: "1000px",
             }).css("display", "none");

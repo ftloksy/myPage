@@ -252,12 +252,16 @@ pagebody > nav {
   min-height: 900px;
   background: #e50914;
 }
-pagebody > nav > img {
+pagebody > nav > svg {
   display: block;
   z-index: 5;
-  width: 30px;
-  height: 150px;
   padding-bottom: 30px;
+  cursor: pointer;
+}
+pagebody > nav > svg:hover > g > rect {
+  fill: yellow;
+  stroke: red;
+  stroke-width: 100;
 }
 
 bio {

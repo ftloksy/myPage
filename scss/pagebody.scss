@@ -22,13 +22,22 @@ pagebody {
 		min-height: 900px;
 		background: $main-red;
 
-		> img {
+		> svg {
 			display: block;
 			z-index: 5;
-			width: 30px;
-			height: 150px;
+//			width: 30px;
+	//		height: 150px;
 //			left: 50px;
 			padding-bottom:  30px;
+			cursor: pointer;
+		}
+
+		> svg:hover {
+			> g > rect {
+				fill: yellow;
+				stroke: red;
+				stroke-width: 100;
+				}	
 		}
 	}
 

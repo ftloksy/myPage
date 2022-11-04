@@ -1,4 +1,10 @@
+let md = window.markdownit();
+
+
 $(document).ready(function() {
+
+
+
 
     $("bio").load("includeHtml/bio.html", function() {
 //        $("img#biolab").attr("right", "0px");
@@ -40,6 +46,12 @@ $(document).ready(function() {
             })
         })
     });
+
+    $.get("me/test.md", function ( data ){
+        console.log(data);
+        $("markdowntest").html(md.render(data));
+    });
+
     $("footer").load("includeHtml/footer.html");
     
 });

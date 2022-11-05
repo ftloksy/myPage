@@ -30,10 +30,18 @@
 }
 
 
-body, html {
+body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
         direction: ltr;
         font-size: 16px;
         color: $white;
 	background: #000;
+	width: 800px;
 }
 
+html {
+        text-align: center;
+}

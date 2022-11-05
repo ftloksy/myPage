@@ -7,37 +7,40 @@ pagebody {
 //	right: 100px;
 //	right: 50px;
 
-	> page {
+	> aboutme {
 		display: block;
 		//	min-width: 800px;
 			// background: $coverpagebackgroundimg;
 			// background: $copyright-background;
-		height: 1200px;
-		padding-top: 20px;
+		// height: 1200px;
+		// padding-top: 20px;
 		// text-align: right;
+		// padding-right: 30px;
 	}
 
-	> nav {
+	> navbar {
 		width: 100px;
-		min-height: 900px;
+		min-height: 600px;
 		background: $main-red;
 
-		> svg {
-			display: block;
-			z-index: 5;
-//			width: 30px;
-	//		height: 150px;
-//			left: 50px;
-			padding-bottom:  30px;
-			cursor: pointer;
-		}
-
-		> svg:hover {
-			> g > rect {
-				fill: yellow;
-				stroke: red;
-				stroke-width: 100;
-				}	
+		> nav {
+			> svg {
+				display: block;
+				z-index: 5;
+	//			width: 30px;
+		//		height: 150px;
+	//			left: 50px;
+				padding-bottom:  30px;
+				cursor: pointer;
+			}
+	
+			> svg:hover {
+				> g > rect {
+					fill: yellow;
+					stroke: red;
+					stroke-width: 100;
+					}	
+			}
 		}
 	}
 

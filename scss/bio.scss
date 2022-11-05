@@ -1,5 +1,4 @@
-
-bio {
+aboutme {
     position: relative;
     @extend .flex-start-end;
 
@@ -10,9 +9,9 @@ bio {
         }
     
     > div {
-        display: none;
+        display: block;
         position: absolute;
-        right: 1000px;
-	width: 600px;
+        right: 0px;
+	    width: 600px;
     }
 }

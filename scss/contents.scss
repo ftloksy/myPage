@@ -27,6 +27,11 @@
 		@extend .bold-med-font;
 	}
 
+	p {
+		@extend .bold-med-font;
+		padding-right: 30px;
+	}
+
 	tag {
 		@extend .flex-row-between;
 	}

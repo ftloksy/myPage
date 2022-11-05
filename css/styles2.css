@@ -24,11 +24,20 @@
   position: relative;
 }
 
-body, html {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   direction: ltr;
   font-size: 16px;
   color: #fff;
   background: #000;
+  width: 800px;
+}
+
+html {
+  text-align: center;
 }
 
 @font-face {
@@ -71,7 +80,7 @@ body, html {
   font-weight: 400;
 }
 
-.bold-med-font, .icon-font, pagebody h2 {
+.bold-med-font, .icon-font, pagebody h2, pagebody p {
   font-size: 1.325rem;
   font-weight: 400;
 }
@@ -113,12 +122,12 @@ body, html {
 
 .flex-row, .flex-row-start, .flex-row-between, .flex-row-right,
 .flex-row-center-between, .flex-start-end, row, pagebody, pagebody tag,
-bio {
+aboutme {
   display: flex;
   flex-direction: row;
 }
 
-.flex-row-start, .flex-start-end, row, pagebody, bio {
+.flex-row-start, .flex-start-end, row, pagebody, aboutme {
   align-items: flex-start;
 }
 
@@ -152,7 +161,7 @@ bio {
   align-items: center;
 }
 
-.flex-start-end, pagebody, bio {
+.flex-start-end, pagebody, aboutme {
   justify-content: flex-end;
 }
 
@@ -242,39 +251,40 @@ pagebody img {
 pagebody textarea {
   display: block;
 }
-pagebody > page {
-  display: block;
-  height: 1200px;
-  padding-top: 20px;
+pagebody p {
+  padding-right: 30px;
 }
-pagebody > nav {
+pagebody > aboutme {
+  display: block;
+}
+pagebody > navbar {
   width: 100px;
-  min-height: 900px;
+  min-height: 600px;
   background: #e50914;
 }
-pagebody > nav > svg {
+pagebody > navbar > nav > svg {
   display: block;
   z-index: 5;
   padding-bottom: 30px;
   cursor: pointer;
 }
-pagebody > nav > svg:hover > g > rect {
+pagebody > navbar > nav > svg:hover > g > rect {
   fill: yellow;
   stroke: red;
   stroke-width: 100;
 }
 
-bio {
+aboutme {
   position: relative;
 }
-bio > img {
+aboutme > img {
   display: none;
   position: absolute;
   right: 70%;
 }
-bio > div {
-  display: none;
+aboutme > div {
+  display: block;
   position: absolute;
-  right: 1000px;
+  right: 0px;
   width: 600px;
 }

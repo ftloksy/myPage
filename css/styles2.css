@@ -259,7 +259,6 @@ pagebody > aboutme {
 }
 pagebody > navbar {
   width: 100px;
-  min-height: 600px;
   background: #e50914;
 }
 pagebody > navbar > nav > svg {
